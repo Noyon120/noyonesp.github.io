@@ -1,33 +1,52 @@
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #0b0f1a;
-  color: white;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0d1117;
+    color: #ffffff;
+    scroll-behavior: smooth;
 }
 header {
-  text-align: center;
-  padding: 40px;
-  background: #111827;
+    background: linear-gradient(135deg, #1e293b, #0f172a);
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom: 4px solid #f59e0b;
 }
+header h1 { font-size: 3rem; margin: 0; color: #f59e0b; }
 nav {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  background: #020617;
-  padding: 15px;
+    display: flex;
+    justify-content: center;
+    background: #161b22;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
+    color: #e6edf3;
+    text-decoration: none;
+    padding: 0 15px;
+    font-weight: bold;
+    transition: 0.3s;
 }
-section {
-  padding: 40px;
-  max-width: 900px;
-  margin: auto;
+nav a:hover { color: #f59e0b; }
+section { padding: 50px 20px; max-width: 1000px; margin: auto; text-align: center; }
+.player-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #020617;
+.player-card {
+    background: #21262d;
+    border-radius: 15px;
+    padding: 20px;
+    width: 200px;
+    border: 1px solid #30363d;
 }
+.player-card img { width: 100%; border-radius: 10px; }
+table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+th, td { padding: 15px; border: 1px solid #30363d; }
+th { background: #1f2937; color: #f59e0b; }
+.win { color: #10b981; font-weight: bold; }
+.custom-card { background: #1e293b; padding: 20px; border-radius: 10px; border: 1px dashed #f59e0b; }
+footer { background: #161b22; padding: 20px; text-align: center; font-size: 0.9rem; }
